@@ -1,0 +1,125 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #e0c43623;
+  background-image: url(images/backgrd.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+h2{
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+}
+
+span{
+  color: #957c00;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+/* profile pic in div */
+.profile{
+  height: 40vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding-top: 200px;
+}
+
+.profile-photo{
+  width: 150px;
+  border-radius: 100%;
+}
+
+
+/* contact-me section */
+nav{
+  /* background-color: aqua; */
+  height: 60vh;
+  width: 100vw;
+  max-width: 600px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  column-gap: 100px;
+  /* position: relative; */
+}
+
+a{
+  /* background-color: blue; */
+  text-decoration: none;
+  color: #e0c436;
+  transition: all 600ms;
+}
+
+a:hover{
+  border-radius: 100%;
+  color: #957c00;
+  transform: scale(1.2)
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+a:visited{
+  color: #957c00;
+  
+}
+
+/*
+.profile-photo{
+  position: absolute;
+  width: 150px;
+  border-radius: 100%;
+  top: 100px;
+  left: 690px;
+  text-align: center;
+  z-index: 1;
+} 
+
+ nav::before{
+  content: url(images/photo_2022.jpg);
+  transform: scale(0.2);
+  position: absolute;
+  bottom: 60px;
+  border: 40px solid red;
+  border-radius: 1000px;
+} 
+
+.container{
+  background-color: red;
+  width: 60vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+
+} */
+
+
+
+@media (max-width: 625px){
+  nav{
+    display: flex;
+    column-gap: 4rem;
+  }
+
+  img{
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 8px 25px 0 rgba(0, 0, 0, 0.723);
+  }
+
+  h2{
+    margin: 25px auto 5px;
+  }
+
+  p{
+    color: #757575;
+  }
+}
